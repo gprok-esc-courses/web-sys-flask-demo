@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <h1>About Us</h1>
+    <h2>We specialize in Flask apps</h2>
+
+    <h2>Services</h2>
+    <ul>
+    {% for service in services %}
+        <li>{{ service[1] }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
